@@ -120,6 +120,12 @@ html body .wrapper-content .first-section-wrapper .first-section__features img {
   height: 400px;
   display: inline-block;
 }
+@media (max-width: 991px) {
+  html body .wrapper-content .first-section-wrapper .first-section__features img {
+    width: 310px;
+    height: 310px;
+  }
+}
 html body .wrapper-content-2 {
   width: 100%;
   height: 1100px;
@@ -140,6 +146,12 @@ html body .wrapper-content-2 .second-section-wrapper--developers {
   justify-content: space-between;
   margin-top: 70px;
 }
+@media (max-width: 991px) {
+  html body .wrapper-content-2 .second-section-wrapper--developers {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 html body .wrapper-content-2 .second-section-wrapper--developers__card {
   width: 30.3%;
   height: 100%;
@@ -149,16 +161,34 @@ html body .wrapper-content-2 .second-section-wrapper--developers__card {
   padding-top: 15px;
   box-shadow: 6px 6px 12px #3a3a3a;
 }
+@media (max-width: 991px) {
+  html body .wrapper-content-2 .second-section-wrapper--developers__card {
+    width: 70%;
+    margin: auto 0;
+    margin-bottom: 40px;
+    padding-top: 33px;
+  }
+}
 html body .wrapper-content-2 .second-section-wrapper--developers__card img {
   width: 90%;
   height: 181px;
   margin: 0 auto;
 }
+@media (max-width: 991px) {
+  html body .wrapper-content-2 .second-section-wrapper--developers__card img {
+    width: 80%;
+  }
+}
 html body .wrapper-content-2 .second-section-wrapper--developers__card p {
-  width: 90%;
+  width: 80%;
   margin: 20px auto;
   text-align: justify;
   line-height: normal;
+}
+@media (max-width: 991px) {
+  html body .wrapper-content-2 .second-section-wrapper--developers__card p {
+    width: 80%;
+  }
 }
 html body .wrapper-content-2 .second-section-wrapper--developers__card .icons-red {
   display: flex;
@@ -174,6 +204,11 @@ html body .wrapper-content-2 .second-section-wrapper--developers__card .icons-re
 html body .wrapper-content-2 .second-section-wrapper--developers__card .icons-red img {
   width: 30px;
   height: 30px;
+}
+@media (max-width: 991px) {
+  html body .wrapper-content-2 {
+    height: 2100px;
+  }
 }
 html body .wrapper-content-3 {
   width: 100%;
@@ -191,6 +226,15 @@ html body .wrapper-content-3 .third-section-wrapper {
 html body .wrapper-content-3 .third-section-wrapper--content {
   display: flex;
   align-items: center;
+}
+@media (max-width: 991px) {
+  html body .wrapper-content-3 .third-section-wrapper--content {
+    align-items: space-between;
+  }
+  html body .wrapper-content-3 .third-section-wrapper--content img {
+    width: 50%;
+    margin-left: 15px;
+  }
 }
 html body footer {
   width: 100%;
