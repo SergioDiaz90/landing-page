@@ -11,7 +11,7 @@ $second-color-white: #efefef
 /*Variables breakpoints*/
 $tablet: 991px
 $mini-tablet: 769px
-$bg-movil: 547px
+$bg-movil: 576px
 $movil: 376px
 
 /*General rules*/
@@ -21,3 +21,31 @@ h2 p h1
 	
 h2
 	font-size: 42px
+
+/*mixins*/
+@mixin features
+	display: flex
+	align-items: center
+	@media (max-width: $mini-tablet)
+		width: 70%
+		margin: 0 auto
+		margin-bottom: 70px
+	img
+		width: 410px
+		height: 400px
+		display: inline-block
+		@media (max-width: $tablet)
+			width: 310px
+			height: 310px
+		@media (max-width: $mini-tablet)
+			width: 410px
+			height: 400px
+@mixin items-menu
+	a
+		font-family: Arial, Helvetica, sans-serif
+		color: $second-color-white
+		text-decoration: none
+	&:hover
+		cursor: pointer
+		color: $primary-color-gray
+		background: $primary-color-green

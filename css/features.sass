@@ -5,12 +5,10 @@
 	h2
 		margin-top: 0
 	.first-section__features
-		display: flex
-		align-items: center
-		img
-			width: 410px
-			height: 400px
-			display: inline-block
-			@media (max-width: $tablet)
-				width: 310px
-				height: 310px
+		@include features
+		@media (max-width: $mini-tablet)
+			flex-direction: column
+	.first-section__features--revert
+		@include features
+		@media (max-width: $mini-tablet)
+		flex-direction: column-reverse

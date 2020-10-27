@@ -17,6 +17,13 @@ html(lang="en")
 						each item in ['Home', 'Features', 'About Us', 'More']
 							li(class="nav-container--item")
 								a(href=`#${item}`)=item
+				input(type="checkbox" name="btn-menu" class="btn-menu" id="btn-menu")
+				label(for="btn-menu")
+				div(class="header-container_nav-responsive")
+					ul(class="nav-responsive-container")
+						each item in ['Home', 'Features', 'About Us', 'More']
+							li(class="nav-responsive-container--item")
+								a(href=`#${item}`)=item
 		div(name="Home" id="Home" class="slider")
 			h1 Make it simple, fast, and useful.
 		div(class="wrapper-content")
@@ -27,7 +34,7 @@ html(lang="en")
 					img(src="img/Rectángulo 10.png" alt="img-1")
 					p
 						|Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cumque ipsum nisi ratione, rerum quae ipsa iste, neque voluptas vitae minus vero itaque dolorem odio dolor aut voluptatum veritatis aliquam. Sequi molestias nisi, minima exercitationem sunt repellat ipsam veniam inventore, mollitia dolores libero. Sed voluptatum sint amet porro et quidem?
-				div(class="first-section__features")
+				div(class="first-section__features--revert")
 					p
 						|Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cumque ipsum nisi ratione, rerum quae ipsa iste, neque voluptas vitae minus vero itaque dolorem odio dolor aut voluptatum veritatis aliquam. Sequi molestias nisi, minima exercitationem sunt repellat ipsam veniam inventore, mollitia dolores libero. Sed voluptatum sint amet porro et quidem?
 					img(src="img/Rectángulo 10.png" alt="img-1")
