@@ -1,22 +1,26 @@
 header
+	position: fixed
 	width: 100%
-	height: 138px
-	background-color: $primary-color-gray
+	height: 90px
 	margin: 0
+	z-index: 1
+	background-color: $primary-color-gray
 	.header-container
 		width: 90%
+		height: 100%
 		position: relative
-		margin: 0 auto
 		display: flex
 		justify-content: space-between
 		align-items: center
-		padding: 5px
+		// padding: 8px
 		&_logo
-			width: 100px
-			height: 122px
-			background-image: url(../img/not-clicks-logo.svg)
-			background-size: cover
+			width: 175px
+			height: 70px
+			margin-left: 50px
+			background-image: url(../img/not-clicks-4.png)
+			background-size: contain
 			background-repeat: no-repeat
+			background-position: center
 		&_nav
 			.nav-container
 				display: flex
