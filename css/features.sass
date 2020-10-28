@@ -9,13 +9,21 @@
 		margin-left: 20px
 		margin-right: 20px
 		line-height: 36px
+		@media (max-width: $mini-tablet)
+			margin-top: 6%
+		@media (max-width: $bg-movil)
+			font-size: 25px
+			margin-left: 0
+			margin-right: 0
+		@media (max-width: $movil)
+			font-size: 21px
 	.first-section__features
 		@include features
-		margin-bottom: 50px
+		margin-bottom: 130px
 		@media (max-width: $mini-tablet)
 			flex-direction: column
 	.first-section__features--revert
 		@include features
-		margin-bottom: 50px
+		margin-bottom: 130px
 		@media (max-width: $mini-tablet)
 			flex-direction: column-reverse

@@ -7,12 +7,15 @@
 	&--developers
 		display: flex
 		width: 100%
-		height:100%
+		height: 565px
 		justify-content: space-between
 		margin-top: 70px
 		@media (max-width: $tablet)
-			flex-direction: column
-			align-items: center
+			flex-wrap: wrap
+			justify-content: center
+			// flex-direction: column
+			// align-items: center
+		
 		&__card
 			width: 30.3%
 			height: 100%
@@ -22,10 +25,11 @@
 			padding-top: 15px
 			box-shadow: 6px 6px 12px $primary-color-gray
 			@media (max-width: $tablet)
-				width: 70%
-				margin: auto 0
-				margin-bottom: 40px
+				width: 45%
+				margin: 40px 20px
 				padding-top: 33px
+			@media (max-width: $mini-tablet)
+				width: 75%
 			img
 				width: 90%
 				height: 181px
@@ -34,8 +38,9 @@
 					width: 80%
 			p
 				width: 80%
+				height: 40%
 				margin: 20px auto
-				text-align: justify
+				font-size: 14px
 				line-height: normal
 				@media (max-width: $tablet)
 					width: 80%
