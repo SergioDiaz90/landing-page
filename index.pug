@@ -4,7 +4,8 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		link(rel="icon" type="image/png" sizes="32x32" href="./img/favicon.ico")
-		link(rel='stylesheet', href="css/styles.css")
+		link(rel='stylesheet' href="css/styles.css")
+		link(rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
 		link(rel="stylesheet" href="https://use.typekit.net/plx3vvc.css")
 		script(src='js/scripts.js')
 		title Not-Clicks
@@ -18,14 +19,14 @@ html(lang="en")
 							li(class="nav-container--item")
 								a(href=`#${item}`)=item
 				input(type="checkbox" name="btn-menu" class="btn-menu" id="btn-menu")
-				label(for="btn-menu")
-				div(class="header-container_nav-responsive")
+				label(for="btn-menu" id="btn-menu")
+				div(class="header-container_nav-responsive" id="nav-responsive")
 					ul(class="nav-responsive-container")
 						each item in ['Home', 'Features', 'About Us', 'More']
 							li(class="nav-responsive-container--item")
 								a(href=`#${item}`)=item
 		div(name="Home" id="Home" class="slider")
-			h1 Make it simple, fast, and useful.
+			h1(class="animate pulse") Make it simple, fast, and useful.
 		div(class="wrapper-content")
 				div(class="first-section-wrapper" name="Features" id="Features")
 					h2 Features
@@ -42,12 +43,12 @@ html(lang="en")
 						p(class="p-features")
 							| Send a greeting message to a pool of your clients, increase your productivity and give the best customer service, don't waste your time making clicks, use NotClicks! A complement for whathash.
 		div(class="wrapper-content-2")
-				div(class="second-section-wrapper" name="About Us" id="About Us")
+				div(class="second-section-wrapper" class="About-Us" name="About Us" id="About Us")
 					h2 About Us
-					p.
+					p(class="about-text").
 						Makin the things fast simple and useful, Is like a mantra for each team member, this takes sense when the team uses technology to create not-clicks,  trough 9 moths the entire team was improving their knowledge for creating tools based on software development, all these talents were joined to supply a solution for Ayenda company.
 						The big challenge had arrived.  One of the most important values that a company can offer is a great customer experience, and the main factor to do it is with time, as little as it may seem, passing time making clicks can be waste the chance to give a good service,
-					p.
+					p(class="about-text").
 						when they noticed it, it was the opportunity to create a big solution, now Ayenda service agents, spend more time given bigger experiences and saving time without using the mouse.
 					div(class="second-section-wrapper--developers")
 						div(class="second-section-wrapper--developers__card")

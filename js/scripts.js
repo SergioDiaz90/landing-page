@@ -4,10 +4,10 @@ window.addEventListener('scroll', () => {
 	let widthScreen = window.innerHeight / 3;
 	if (coords < widthScreen) {
 		const features = document.querySelector('#Features').children;
-		const about = document.querySelector('#About-Us').children;
+		const about = document.querySelector('.About-Us').children;
 		const more = document.querySelector('#More').children;
 		let arr = [...features, ...about, ...more];
-		console.log(arr);
+		// console.log(arr);
 		let animations = [
 			'animate__bounceInLeft', 
 			'animate__bounceInLeft',
