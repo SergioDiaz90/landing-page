@@ -8,6 +8,7 @@ html(lang="en")
 		link(rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
 		link(rel="stylesheet" href="https://use.typekit.net/plx3vvc.css")
 		script(src='js/scripts.js')
+		script(src='js/slider.js')
 		title Not-Clicks
 	body
 		header
@@ -26,7 +27,14 @@ html(lang="en")
 							li(class="nav-responsive-container--item")
 								a(href=`#${item}`)=item
 		div(name="Home" id="Home" class="slider")
-			h1(class="animate pulse") Make it simple, fast, and useful.
+			div(class="slider-container")
+				img(src="img/img-1.jpg", alt="")
+				img(src="img/img-2.jpg", alt="")
+				img(src="img/img-3.jpg", alt="")
+				img(src="img/img-4.jpg", alt="")
+				h1(class="animate pulse") Make it simple, fast, and useful.
+			div(class="slider-controls")
+				ul
 		div(class="wrapper-content")
 				div(class="first-section-wrapper" name="Features" id="Features")
 					h2 Features
@@ -43,7 +51,7 @@ html(lang="en")
 						p(class="p-features")
 							| Send a greeting message to a pool of your clients, increase your productivity and give the best customer service, don't waste your time making clicks, use NotClicks! A complement for whathash.
 		div(class="wrapper-content-2")
-				div(class="second-section-wrapper" class="About-Us" name="About Us" id="About Us")
+				div(class="second-section-wrapper About-Us" name="About Us" id="About Us")
 					h2 About Us
 					p(class="about-text").
 						Makin the things fast simple and useful, Is like a mantra for each team member, this takes sense when the team uses technology to create not-clicks,  trough 9 moths the entire team was improving their knowledge for creating tools based on software development, all these talents were joined to supply a solution for Ayenda company.
