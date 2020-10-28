@@ -311,6 +311,7 @@ html body .wrapper-content .first-section-wrapper .first-section__features img {
   height: 400px;
   display: inline-block;
   box-shadow: 6px 6px 13px #3a3a3a;
+  border-radius: 20px;
 }
 @media (max-width: 991px) {
   html body .wrapper-content .first-section-wrapper .first-section__features img {
@@ -352,6 +353,7 @@ html body .wrapper-content .first-section-wrapper .first-section__features--reve
   height: 400px;
   display: inline-block;
   box-shadow: 6px 6px 13px #3a3a3a;
+  border-radius: 20px;
 }
 @media (max-width: 991px) {
   html body .wrapper-content .first-section-wrapper .first-section__features--revert img {
@@ -423,6 +425,7 @@ html body .wrapper-content-2 .second-section-wrapper--developers__card {
   background-color: white;
   padding-top: 15px;
   box-shadow: 6px 6px 12px #3a3a3a;
+  border-radius: 20px;
 }
 @media (max-width: 991px) {
   html body .wrapper-content-2 .second-section-wrapper--developers__card {
@@ -518,6 +521,9 @@ html body .wrapper-content-3 .third-section-wrapper--content {
   display: flex;
   align-items: center;
   opacity: 0;
+}
+html body .wrapper-content-3 .third-section-wrapper--content img {
+  border-radius: 20px;
 }
 @media (max-width: 991px) {
   html body .wrapper-content-3 .third-section-wrapper--content {
