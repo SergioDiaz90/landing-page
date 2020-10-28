@@ -91,7 +91,7 @@ html body header .header-container {
 html body header .header-container_logo {
   width: 175px;
   height: 70px;
-  margin-left: 50px;
+  margin-left: 63px;
   background-image: url(../img/not-clicks-4.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -227,7 +227,7 @@ html body .wrapper-content .first-section-wrapper .first-section__features {
   }
 }
 html body .wrapper-content .first-section-wrapper .first-section__features img {
-  width: 410px;
+  width: 50%;
   height: 400px;
   display: inline-block;
 }
@@ -266,7 +266,7 @@ html body .wrapper-content .first-section-wrapper .first-section__features--reve
   }
 }
 html body .wrapper-content .first-section-wrapper .first-section__features--revert img {
-  width: 410px;
+  width: 50%;
   height: 400px;
   display: inline-block;
 }
