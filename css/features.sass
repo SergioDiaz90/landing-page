@@ -4,6 +4,7 @@
 	padding-top: 163px
 	h2
 		margin-top: 0
+		opacity: 0
 	.p-features
 		font-size: 30px
 		margin-left: 20px
@@ -19,11 +20,13 @@
 			font-size: 21px
 	.first-section__features
 		@include features
+		opacity: 0
 		margin-bottom: 130px
 		@media (max-width: $mini-tablet)
 			flex-direction: column
 	.first-section__features--revert
 		@include features
+		opacity: 0
 		margin-bottom: 130px
 		@media (max-width: $mini-tablet)
 			flex-direction: column-reverse

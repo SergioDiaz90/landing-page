@@ -56,10 +56,11 @@ header
 		&_nav-responsive
 			position: absolute
 			top: -472px  //138px js
-			right: -24px
+			right: -52px
 			z-index: 1
 			width: 110%
 			background: $primary-color-gray
+			transition: top 0.3s ease-out
 			.nav-responsive-container
 				width: 100%
 				margin: 0 
@@ -69,3 +70,6 @@ header
 				&--item
 					@include items-menu
 					padding: 50px
+		&_nav-responsive.active
+			top: 90px
+			transition: top 0.3s ease-out
