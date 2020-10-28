@@ -250,7 +250,7 @@ html body .slider-controls li {
   cursor: pointer;
 }
 html body .slider-controls li.active {
-  background-color: whitesmoke;
+  background-color: #cfe900;
 }
 html body .wrapper-content {
   width: 100%;
