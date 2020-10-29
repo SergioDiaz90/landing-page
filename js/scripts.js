@@ -47,6 +47,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
 	const navRsp = document.querySelector('#nav-responsive');
 	const btnDownload = document.querySelector('#btn-dwl');
 	const btnGit = document.querySelector('#btn-git');
+	const items = document.querySelector('#Home-menu');
+	const items2 = document.querySelector('#Features-menu');
+	const items3 = document.querySelector('#About-Us-menu');
+	const items4 = document.querySelector('#More-menu');
 	/**Variables */
 	/**Animation menu btn */
 	btnMenu.addEventListener('click', () => {
@@ -62,5 +66,15 @@ document.addEventListener('DOMContentLoaded', ()=> {
 		btnGit.classList.add('animate__animated', 'animate__pulse');
 	});
 	/**Animation btn */
+	/**Hidden menu after click bottom */
+	items.addEventListener('click', lessActive);
+	items2.addEventListener('click', lessActive);
+	items3.addEventListener('click', lessActive);
+	items4.addEventListener('click', lessActive);
+	/** Function for remove active class in menu rsp*/
+	function lessActive () {
+		navRsp.classList.remove('active');
+	}
+	/**Hidden menu after click bottom */
 });
 /** Event listener of menu and buttons*/
