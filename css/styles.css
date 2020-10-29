@@ -88,11 +88,6 @@ html body header .header-container {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 376px) {
-  html body header .header-container {
-    width: 80%;
-  }
-}
 html body header .header-container_logo {
   width: 175px;
   height: 70px;
@@ -153,7 +148,7 @@ html body header .header-container label {
   display: none;
   width: 50px;
   height: 50px;
-  background-image: url(../img/icon-menu.svg);
+  background-image: url(../img/icon-menu.png);
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: center;
@@ -165,7 +160,7 @@ html body header .header-container label {
   }
 }
 html body header .header-container label:hover {
-  background-color: #F2CB05;
+  background-color: rgba(207, 233, 0, 0.5);
   transition-property: background-color;
   transition-duration: 1s;
   transition-delay: 0.3s;
