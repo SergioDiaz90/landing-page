@@ -12,7 +12,6 @@ header
 		display: flex
 		justify-content: space-between
 		align-items: center
-		// padding: 8px
 		&_logo
 			width: 175px
 			height: 70px
@@ -35,6 +34,8 @@ header
 					padding:12px
 					@include items-menu
 					margin-right: 30px
+					@media (max-width: $mini-tablet)
+						padding: 0
 					&:hover
 						cursor: pointer
 						color: $primary-color-gray
