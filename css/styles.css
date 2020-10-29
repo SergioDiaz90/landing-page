@@ -483,6 +483,11 @@ html body .wrapper-content-2 .second-section-wrapper--developers__card {
   box-shadow: 6px 6px 12px #3a3a3a;
   border-radius: 20px;
 }
+@media (max-width: 425px) {
+  html body .wrapper-content-2 .second-section-wrapper--developers__card {
+    height: 110%;
+  }
+}
 @media (max-width: 991px) {
   html body .wrapper-content-2 .second-section-wrapper--developers__card {
     width: 45%;
@@ -549,7 +554,7 @@ html body .wrapper-content-2 .second-section-wrapper--developers__card .icons-re
 }
 @media (max-width: 425px) {
   html body .wrapper-content-2 {
-    height: 2850px;
+    height: 3000px;
   }
 }
 html body .wrapper-content-3 {

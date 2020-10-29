@@ -74,7 +74,7 @@ moveTo (idx) {
 	}
 }
 document.addEventListener('DOMContentLoaded', () => {
-	new Slider ('.slider', false);
+	new Slider ('.slider', true);
 	(function () {
 	})();
 });
