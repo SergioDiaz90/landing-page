@@ -24,7 +24,7 @@ constructor(selected, movimiento=true){
 
 start () {
 	if (!this.movimiento) return;
-	this.interval = window.setInterval(this.move, 3000);
+	this.interval = window.setInterval(this.move, 2000);
 }
 
 restart () {
@@ -71,12 +71,10 @@ moveTo (idx) {
 	this.slider.querySelector(
 	".slider-controls li:nth-child("+(idx + 1)+")").classList.add('active');
 	this.slider.querySelector(".slider-container").style.left = '-' + left + '%';
+	}
 }
-}
-	
-// (function () {
-// 	new Slider ('.slider', true);
-// })();
 document.addEventListener('DOMContentLoaded', () => {
 	new Slider ('.slider', true);
+	(function () {
+	})();
 });
