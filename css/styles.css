@@ -152,6 +152,7 @@ html body header .header-container label {
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: center;
+  z-index: 2;
 }
 @media (max-width: 576px) {
   html body header .header-container label {
