@@ -4,25 +4,35 @@
 	padding-top: 163px
 	h2
 		opacity: 0
-	@media (max-width: $movil)
-		width: 80%
+	// @media (max-width: $movil)
+	// 	width: 80%
 	&--content
 		display: flex
 		align-items: center
 		opacity: 0
-		img
+		p
+			width: 50%
+			margin-right: 30px
+			@media (max-width: $mini-tablet)
+				width: 90%
+			@media (max-width: $md-movil)
+				width: 80%
+				margin-right: 0
+		video
 			border-radius: 20px
+			width: 50%
 		@media (max-width: $tablet)
 			align-items: space-between
-			img
+			video
 				width: 50%
-				margin-left: 15px
 		@media (max-width: $mini-tablet)
 			flex-direction: column
-			img
-				width: 70%
+			video
+				width: 90%
+				height: 300px
 				margin-top: 60px
+				margin-left: 0
 		@media (max-width: $movil)
-			img
+			video
 				width: 100%
 
