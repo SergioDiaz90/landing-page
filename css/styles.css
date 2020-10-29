@@ -488,6 +488,11 @@ html body .wrapper-content-2 .second-section-wrapper--developers__card {
     height: 110%;
   }
 }
+@media (max-width: 376px) {
+  html body .wrapper-content-2 .second-section-wrapper--developers__card {
+    height: 115%;
+  }
+}
 @media (max-width: 991px) {
   html body .wrapper-content-2 .second-section-wrapper--developers__card {
     width: 45%;
