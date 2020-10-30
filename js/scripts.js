@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
 	const more = document.querySelector('#More').children;
 	let arr = [...features, ...about, ...more];
 	let animations = [
-		'animate__bounceInLeft', 
+		'animate__fadeInLeft', 
 		'animate__bounceInLeft',
 		'animate__bounceInRight', 
 		'animate__bounceInLeft',
@@ -30,6 +30,7 @@ window.addEventListener('scroll', () => {
 		arr.forEach((elm, idx) => {
 			// console.log(elm);
 			if (parseInt(elm.getBoundingClientRect().top) < widthScreen) {
+				elm.style.property = 'all 0.3s ease-out';
 				elm.style.opacity = 1;
 				elm.classList.add('animate__animated', animations[idx]); 
 			}
