@@ -398,7 +398,6 @@ html body .wrapper-content .first-section-wrapper .first-section__features--reve
   align-items: center;
   opacity: 0;
   margin-bottom: 130px;
-  transition: opacity 0.5s ease-out;
 }
 @media (max-width: 769px) {
   html body .wrapper-content .first-section-wrapper .first-section__features--revert {
